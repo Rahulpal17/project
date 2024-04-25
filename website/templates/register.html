@@ -9,7 +9,6 @@
 <br/>
 <form method="POST" action="">
 	{% csrf_token %}
-
 	{% if form.errors %}
 			<div class="alert alert-warning alert-dismissible fade show" role="alert">
 			  Your Form Has Errors
@@ -24,14 +23,10 @@
 
 	{{ form.as_p }}
 
-	</br>
+	<br/>
 
     <button type="submit" class="btn btn-secondary">Register</button>
-
-
-	</form>
-
-
+</form>
 </div>
 
 {% endblock %}
